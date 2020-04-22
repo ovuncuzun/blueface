@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "blueface"
+    }
+  },
+  "defaultProject": "blueface",
+  "cli": {
+    "analytics": "fd9bfa9b-04b2-4fa4-9dec-4cad735b5b59"
+  }
 }

@@ -1,0 +1,12 @@
+<div>
+    <h1>{{ title }}</h1>
+    <p *ngIf='isUserLoading'>Loading profile...</p>
+    <p *ngIf='isUserSaving'>Saving profile...</p>
+    <p *ngIf='isError'>Error!</p>
+    <div>
+        <label>Username:</label>
+        <input type="text" value={{selectedUser?.username}} #username (keydown)="onUsernameKeydown()" />
+        <input type="button" [disabled]="isUserLoading || isUserSaving" value="Save"
+            (click)="onUsernameSave(username.value)" />
+    </div>
+</div>
